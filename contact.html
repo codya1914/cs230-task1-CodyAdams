@@ -21,19 +21,27 @@
 
 <main>
 
-    <section>
+    <section id="formSection">
         <h2>Tell Me About Your HTML Experience</h2>
 
         <form>
 
             <p>
-                <label for="name">Name:</label>
+                <label for="firstname">Firstname:</label>
 
                 <input
                         type="text"
-                        id="name"
+                        id="firstname"
                         name="name"
                         required>
+
+                <label for="lastname">Lastname:</label>
+
+                <input
+                    type="text"
+                    id="lastname"
+                    name="name"
+                    required>
             </p>
 
             <p>
@@ -55,6 +63,48 @@
                         name="age"
                         min="1"
                         max="120">
+            </p>
+
+            <p>
+                <label>
+                    Beginner
+                    <input
+                            type="radio"
+                            name="Options"
+                            id="beginner">
+
+                </label>
+
+                <label>
+                    Intermediate
+                    <input
+                            type="radio"
+                            name="Options"
+                            id="intermediate">
+                </label>
+
+                <label>
+                    Advanced
+                    <input
+                            type="radio"
+                            name="Options"
+                            id="advanced">
+                </label>
+            </p>
+
+            <p>
+                <h2>Here is an example of a range:</h2>
+                <label for="range1">
+                    Range (1-100):
+                    1
+                    <input
+                            name="range"
+                            id="range1"
+                            type="range"
+                            min="1"
+                            max="100">
+                    100
+                </label>
             </p>
 
             <p>
