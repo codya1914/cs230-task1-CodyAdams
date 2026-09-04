@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1-1 Html Forms</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Basic Form</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About HTML</a> |
+        <a href="resources.html">Resources</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="forms.html">Basic Forms</a> |
+        <a href="RealForm.html">Real Form</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2> This is part of Task 1.1 - 1.</h2>
+    <p> This portion is used to give an understanding of forms </p>
+
+    <form>
+        <section>
+            <p>
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Lastname:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Phone Number:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </p>
+        </section>
+
+        <br><br>
+
+        <section>
+            <p>
+                <label for="number">Choose a number between 1 and 100:</label>
+
+                <input type="number" id="number" name="number" min="1" max="100">
+            </p>
+        </section>
+
+        <br><br>
+
+        <section>
+            <p>
+                <p class="classyear">What is your class year?</p>
+
+                <input type="radio" id="freshman" name="classyear" value="freshman">
+                <label for="freshman">Freshman</label>
+
+                <input type="radio" id="sophomore" name="classyear" value="sophomore">
+                <label for="sophomore">Sophomore</label>
+
+                <input type="radio" id="junior" name="classyear" value="junior">
+                <label for="junior">Junior</label>
+
+                <input type="radio" id="senior" name="classyear" value="senior">
+                <label for="senior">Senior</label>
+
+
+                <p class="classformat">Which class format do you prefer?</p>
+
+                <input type="radio" id="inperson" name="classformat" value="inperson">
+                <label for="inperson">In Person</label>
+
+                <input type="radio" id="online" name="classformat" value="online">
+                <label for="online">Online</label>
+
+                <input type="radio" id="hybrid" name="classformat" value="hybrid">
+                <label for="hybrid">Hybrid</label>
+            </p>
+        </section>
+
+        <br><br>
+
+        <section>
+            <p class="languages">Which programming languages have you used?</p>
+
+            <input type="checkbox" id="python" name="languages" value="python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="java" name="languages" value="java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="cpp" name="languages" value="cpp">
+            <label for="cpp">C++</label>
+
+
+            <p class="devices">Which devices do you use?</p>
+
+            <input type="checkbox" id="laptop" name="devices" value="laptop">
+            <label for="laptop">Laptop</label>
+
+            <input type="checkbox" id="tablet" name="devices" value="tablet">
+            <label for="tablet">Tablet</label>
+
+            <input type="checkbox" id="phone" name="devices" value="phone">
+            <label for="phone">Phone</label>
+        </section>
+
+        <br><br>
+
+        <section>
+
+            <label for="rating">Choose a value from 1 to 10:</label>
+            1
+            <input type="range" id="rating" name="rating" min="1" max="10" value="4">
+            10
+
+        </section>
+
+        <br><br>
+
+        <section>
+
+            <label for="favoritecolor">Choose a color:</label>
+            <input type="color" id="favoritecolor" name="favoritecolor">
+
+        </section>
+
+        <br><br>
+
+        <section>
+
+            <label for="myfile">Choose a file:</label>
+            <input type="file" id="myfile" name="myfile">
+
+        </section>
+
+        <br><br>
+
+        <section>
+            <label for="complaint">Enter your complaint:</label>
+
+            <br>
+
+            <textarea id="complaint" name="complaint" rows="6" cols="40"> </textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </section>
+    </form>
+</main>
+
+</body>
+
+</html>
