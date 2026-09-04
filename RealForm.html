@@ -19,8 +19,139 @@
     </nav>
 </header>
 
-<h2> This is part of Task 1.1 - 2</h2>
-<p> This portion is to construct a simple form that draws on multiple mechanisms to accomplish a “genuine” task.</p>
+<main>
+
+    <form>
+
+        <h2> This is part of Task 1.1 - 2</h2>
+        <p> This portion is to construct a simple form that draws on multiple mechanisms to accomplish a “genuine” task.</p>
+
+        <section>
+            <h3>Give Basic Information</h3>
+            <p>
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Lastname:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" id="phonenumber" name="phonenumber" required>
+            </p>
+        </section>
+
+        <br><br>
+
+        <section>
+            <h3>Information about your College</h3>
+
+            <h4>
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" required>
+            </h4>
+
+            <p>
+                <input type="radio" id="freshman" name="year" value="freshman">
+                <label for="freshman">Freshman</label>
+
+                <input type="radio" id="sophomore" name="year" value ="sophomore">
+                <label for="sophomore">Sophomore</label>
+
+                <input type="radio" id="junior" name="year" value ="junior">
+                <label for="junior">Junior</label>
+
+                <input type="radio" id="senior" name="year" value ="senior">
+                <label for="senior">Senior</label>
+            </p>
+
+            <p>
+                <label for="gpa" id="gpa-label">GPA:</label>
+                <input type="number" step="0.01" id="gpa" name="gpa" min="0" max="4" required>
+            </p>
+
+
+            <h4>Add a photo of your self:</h4>
+            <label for="portrait">Choose a file:</label>
+            <input type="file" id="portrait" name="portrait">
+
+            <h4>Add a photo of your résumé:</h4>
+            <label for="resume">Choose a file:</label>
+            <input type="file" id="resume" name="resume">
+        </section>
+
+        <section>
+            <h3>This is going to be more in depth about how you feel today?</h3>
+
+            <p>1. How are you feeling today?</p>
+
+            <input type="radio" id="great" name="feeling" value="great">
+            <label for="great">Great</label>
+
+            <input type="radio" id="okay" name="feeling" value="okay">
+            <label for="okay">Okay</label>
+
+            <input type="radio" id="bad" name="feeling" value="bad">
+            <label for="bad">Bad</label>
+
+
+            <p>2. How comfortable are you with the class material?</p>
+
+            <input type="radio" id="verycomfortable" name="comfort" value="very">
+            <label for="verycomfortable">Very Comfortable</label>
+
+            <input type="radio" id="comfortable" name="comfort" value="comfortable">
+            <label for="comfortable">Comfortable</label>
+
+            <input type="radio" id="confused" name="comfort" value="confused">
+            <label for="confused">Confused</label>
+
+
+            <p>3. How difficult was today's class?</p>
+
+            <input type="radio" id="easy" name="difficulty" value="easy">
+            <label for="easy">Easy</label>
+
+            <input type="radio" id="medium" name="difficulty" value="medium">
+            <label for="medium">Medium</label>
+
+            <input type="radio" id="hard" name="difficulty" value="hard">
+            <label for="hard">Hard</label>
+
+
+            <p>4. Would you like more practice with this topic?</p>
+
+            <input type="radio" id="yes" name="practice" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="practice" value="no">
+            <label for="no">No</label>
+
+
+            <p>5. Which part of class helped you the most?</p>
+
+            <label for="helpful">Choose one:</label>
+
+            <select id="helpful" name="helpful">
+                <option value="">Select an option</option>
+                <option value="lecture">Lecture</option>
+                <option value="examples">Examples</option>
+                <option value="groupwork">Group Work</option>
+                <option value="practice">Practice Problems</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </section>
+
+    </form>
+
+</main>
 
 </body>
 </html>
